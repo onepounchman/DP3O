@@ -1,0 +1,28 @@
+name: hh_pythia2.8b_gemma_bt1
+seed: 42
+bt_scale: 1.0
+bt_train_seed: 42
+bt_val_seed: 43
+alphas: [0.2, 0.4, 0.6]
+num_gpus: 4
+dataset:
+  name: Anthropic/hh-rlhf
+  revision: 09be8c5bbc57cb3887f3a9732ad6aa7ec602a1fa
+models:
+  policy:
+    name: EleutherAI/pythia-2.8b-deduped
+    revision: 7d977fed8c4ce9649816af8cd5fe36a639cbe5b2
+  golden:
+    name: mistralai/Mistral-7B-Instruct-v0.2
+    revision: 63a8b081895390a26e140280378bc85ec8bce07a
+  proxy:
+    name: google/gemma-2b-it
+    revision: 96988410cbdaeb8d5093d1ebdc5a8fb563e02bad
+evaluation:
+  seed: 42
+  temperature: 0.7
+  max_new_tokens: 512
+  max_prompt_tokens: 512
+  generation_batch_size: 8
+  scoring_batch_size: 4
+  bootstrap_samples: 2000

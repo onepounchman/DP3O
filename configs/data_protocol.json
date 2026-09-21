@@ -1,0 +1,9 @@
+{
+  "counts": {"train": 47100, "val": 1000, "test": 2548},
+  "split_hashes": {
+    "train": "35d3233b2bda806e7bafea9a4ca336859c1c535b87e2b1fb8646435b8446afe9",
+    "val": "eabc3e0d311bad4f779deaa23957068701bc8a154c840340544cf98faed334cc",
+    "test": "0b5d4154ae2373010dde8564a7097dcc0d452e438167062f5e2d9aa5afe0db10"
+  },
+  "prompt_overlaps": {"train_val": 14, "train_test": 65, "val_test": 2}
+}

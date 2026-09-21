@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dp3o-hh-bt"
+version = "0.1.0"
+description = "Reproducible HH BT-scale-1 Pythia-2.8B / Gemma-2B-it experiments"
+requires-python = ">=3.10,<3.12"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,34 @@
+alpha: 0.2
+beta: 0.05
+bf16: true
+do_eval: true
+eval_steps: 100
+evaluation_strategy: steps
+gradient_accumulation_steps: 8
+gradient_checkpointing: true
+gradient_checkpointing_kwargs:
+  use_reentrant: false
+learning_rate: 1.0e-06
+load_best_model_at_end: false
+log_level: info
+logging_steps: 10
+lr_scheduler_type: cosine
+max_length: 1024
+max_prompt_length: 512
+num_train_epochs: 1
+optim: adamw_torch
+overwrite_output_dir: false
+per_device_eval_batch_size: 1
+per_device_train_batch_size: 2
+preprocessing_num_workers: 4
+push_to_hub: false
+report_to: []
+reward_type: proxy
+save_steps: 100
+save_strategy: steps
+save_total_limit: 2
+seed: 42
+torch_dtype: bfloat16
+trust_remote_code: false
+use_flash_attention_2: false
+warmup_ratio: 0.1
